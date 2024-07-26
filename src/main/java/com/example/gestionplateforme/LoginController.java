@@ -36,8 +36,8 @@ public class LoginController {
             preparedStatement.setString(1, cin);
             preparedStatement.setString(2, password);
             ResultSet resultSet = preparedStatement.executeQuery();
-            System.out.println("requete sql :"+sql);
-            System.out.println("requete sql :"+resultSet);
+//            System.out.println("requete sql :"+sql);
+//            System.out.println("requete sql :"+resultSet);
 
             return resultSet.next(); // Authentication successful if a record is found
         } catch (SQLException e) {
