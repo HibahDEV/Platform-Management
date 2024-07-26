@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.geometry.Insets?>
+
+<AnchorPane xmlns:fx="http://javafx.com/fxml" fx:controller="com.example.gestionplateforme.HomeController">
+    <children>
+        <Label text="Plateforme des jeunes Youssoufia" style="-fx-font-size: 24;" AnchorPane.topAnchor="10.0" AnchorPane.leftAnchor="10.0" AnchorPane.rightAnchor="10.0" />
+        <VBox spacing="10.0" AnchorPane.leftAnchor="10.0" AnchorPane.topAnchor="50.0" AnchorPane.bottomAnchor="10.0">
+            <children>
+                <Label text="Home" />
+                <Button fx:id="utilisateursButton" text="Utilisateurs" onAction="#handleUtilisateurs"/>
+                <Button fx:id="sallesButton" text="Salles" onAction="#handleSalles"/>
+                <Button fx:id="projetsButton" text="Projets" onAction="#handleProjets"/>
+            </children>
+        </VBox>
+        <VBox spacing="10.0" AnchorPane.topAnchor="100.0" AnchorPane.leftAnchor="150.0">
+            <children>
+                <Label fx:id="userCountLabel" text="Number of Users: 0" />
+                <Label fx:id="projectCountLabel" text="Number of Projects: 0" />
+            </children>
+        </VBox>
+    </children>
+</AnchorPane>
